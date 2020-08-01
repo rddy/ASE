@@ -1,0 +1,26 @@
+<!doctype html>
+
+In this experiment, you will recognize pictures of handwritten digits (0-9). <br>
+Each picture will be broken down into a sequence of partial pictures, like the picture of a '3' below.<br>
+<img src="http://localhost:5000/imgs/clf-viz-example.png" width="1000" height="70"><br>
+The sequence slowly builds up the full picture, one row of pixels at a time.<br>
+Pixels that have not yet been revealed are white, while pixels that have been revealed to be blank are gray.<br>
+You will be shown each partial picture in the sequence, one at a time.<br>
+Please label each partial picture with the digit that you think it represents.<br>
+If the partial picture is empty or does not contain enough detail for you to tell what digit it is, please mark "Not sure".<br>
+After clicking "Submit", more of the picture will be revealed, and you will have a chance to update your label.<br>
+After the full picture has been revealed, a new sequence of partial pictures (of a potentially different digit) will be shown.<br>
+<br>
+There are {{ n_unlabeled_imgs }} images remaining to be labeled.
+<br><br>
+<img style="border:1px solid black;" src="{{ img_url }}" width="280" height="280"><br>
+
+<form action="/log_label" method="post">
+  {% for btn in buttons %}
+  <input type="radio" id="{{btn[0]}}" name="label" value="{{btn[0]}}" {{btn[2]}}>
+  <label for="{{btn[0]}}">{{btn[1]}}</label><br>
+  {% endfor %}
+  <input type="submit" name="submit" value="Submit">
+  <input type="hidden" name="img_url" value="{{ img_url }}" />
+  <input type="hidden" name="user_id" value="{{ user_id }}" />
+</form>
