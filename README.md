@@ -1,6 +1,6 @@
 ## ASE - Assistive State Estimation
 
-[ASE](https://arxiv.org/abs/) is an algorithm for replacing uninformative observations
+[ASE](https://arxiv.org/abs/2008.02840) is an algorithm for replacing uninformative observations
 with synthetic observations that are optimized to induce accurate beliefs about the current state
 in the user. This codebase implements ASE in four domains:
 
@@ -26,13 +26,13 @@ in the user. This codebase implements ASE in four domains:
 ## Citation
 
 If you find this software useful in your work, we kindly request that you cite the following
-[paper](https://arxiv.org/abs/):
+[paper](https://arxiv.org/abs/2008.02840):
 
 ```
 @article{ase2020,
   title={Assisted Perception: Optimizing Observations to Communicate State},
   author={Reddy, Siddharth and Levine, Sergey and Dragan, Anca D.},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2008.02840},
   year={2020}
 }
 ```
