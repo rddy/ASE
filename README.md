@@ -12,8 +12,8 @@ in the user. This codebase implements ASE in four domains:
 ## Usage
 
 1.  Clone `sensei` into your home directory `~`
-2.  Download [data.zip](https://drive.google.com/file/d/1IYdAHWmRRvMrTka7HoRLGoVfh1NK4LVt/view?usp=sharing) and decompress it into `sensei/`
-3.  Download [labeling-data.zip](https://drive.google.com/file/d/1LAjFjmWa-8HVXKCordjj6JjNn9zPpIDH/view?usp=sharing) and decompress it into `sensei/labeling/`
+2.  Download [data.zip](https://drive.google.com/file/d/1FNFYJvZN2ioloBqsFgBFHAkOsAzC0egL/view?usp=sharing) and decompress it into `sensei/`
+3.  Download [labeling-data.zip](https://drive.google.com/file/d/1NEPBE1aVey6awxkSDHBAV1D5de-xZ7N7/view?usp=sharing) and decompress it into `sensei/labeling/`
 3.  Setup an Anaconda virtual environment with `conda create -n senseienv python=3.6`
 4.  Install dependencies with `pip install -r requirements.txt` and `cp deps/box2d/*.py your_conda_install_dir/envs/senseienv/lib/python3.6/site-packages/gym/envs/box2d/; cp deps/rendering.py your_conda_install_dir/envs/senseienv/lib/python3.6/site-packages/gym/envs/classic_control/`
 5.  Install [Habitat](https://github.com/facebookresearch/habitat-api)
